@@ -1,0 +1,72 @@
+2023-09-19 17:24:50[POST to Oceanpayment]
+account = test
+terminal = test
+backUrl = http://test/index.php?route=extension/payment/op_googlepay/callback
+noticeUrl = http://test/index.php?route=extension/payment/op_googlepay/notice
+order_number = 19
+order_currency = USD
+order_amount = 1932
+billing_firstName = Bogdan
+billing_lastName = Butenko
+billing_email = ser.butenko2010@gmail.com
+billing_phone = 1233121231123
+billing_country = GB
+billing_state = Carmarthenshire
+billing_city = вапрвапр
+billing_address = вапрвапрвапр,вапрвапр
+billing_zip = апрвапр
+ship_firstName = Bogdan
+ship_lastName = Butenko
+ship_phone = 1233121231123
+ship_country = GB
+ship_state = Carmarthenshire
+ship_city = вапрвапр
+ship_addr = вапрвапрвапр,вапрвапр
+ship_zip = апрвапр
+methods = 
+signValue = c4f53c7bee8f55e610f675296a362cc05038186443160c097a1581beb3c5744e
+productName = Analog Designer Women Watch
+productSku = 44
+productNum = 2
+cart_info = opencart2.0 above
+cart_api = V1.7.1
+order_notes = 
+ET_REGISTERDATE = 2023-09-19 17:19:02
+ET_COUPONS = No
+*************************************
+2023-09-19 17:24:13[POST to Oceanpayment]
+account = test
+terminal = test
+backUrl = http://test/index.php?route=extension/payment/op_googlepay/callback
+noticeUrl = http://test/index.php?route=extension/payment/op_googlepay/notice
+order_number = 18
+order_currency = USD
+order_amount = 970
+billing_firstName = Bogdan
+billing_lastName = Butenko
+billing_email = ser.butenko2010@gmail.com
+billing_phone = 1233121231123
+billing_country = GB
+billing_state = Carmarthenshire
+billing_city = вапрвапр
+billing_address = вапрвапрвапр,вапрвапр
+billing_zip = апрвапр
+ship_firstName = Bogdan
+ship_lastName = Butenko
+ship_phone = 1233121231123
+ship_country = GB
+ship_state = Carmarthenshire
+ship_city = вапрвапр
+ship_addr = вапрвапрвапр,вапрвапр
+ship_zip = апрвапр
+methods = 
+signValue = 03c8205ccea11763f797559ef3d44d9c6e51cb44f9a598b0aa8cd0605cd1fbec
+productName = Analog Designer Women Watch
+productSku = 44
+productNum = 1
+cart_info = opencart2.0 above
+cart_api = V1.7.1
+order_notes = 
+ET_REGISTERDATE = 2023-09-19 17:19:02
+ET_COUPONS = No
+*************************************

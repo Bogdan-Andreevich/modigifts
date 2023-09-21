@@ -1,0 +1,35 @@
+<div class="newsl webi-newsletter col-xs-12 col-lg-12 {{ prefix }}" id="newsletter_{{ id }}" data-mode="{{ mode }}">
+	<div class="row news_row">
+	    <div class="news_letter col-xs-12">
+			<form id="formNewLestter" method="post" action="{{ action }}" class="formNewLestter" {% if banner is not empty%} style="background-image: url('{{ banner }}')" {% endif %}>
+				<div class="inner">
+					<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 social_icon">
+						{# <h3>{{ text_social }}</h3> #}
+						<ul class="list-unstyled fsocial list-inline">
+						  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+						</ul>
+					</div>
+					<div id="newsletter" class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
+						<h2>{{ entry_sign_up_for_newsletter }}</h2>
+						{# <div class="description-top">{{ text_description }}</div> #}
+						<div class="input-group">
+						<input type="text" class="form-control input-md inputNew" {% if customer_email is not defined %} onblur="javascript:if(this.value=='')this.value='{{ default_input_text }}';" onfocus="javascript:if(this.value=='{{ default_input_text }}')this.value='';"{% endif %} value="{{ customer_email? customer_email : default_input_text }}" size="18" name="email" placeholder="Your email address">
+					
+						<div class="input-group-btn"><button type="submit" name="submitNewsletter" class="newsbtn btn btn-primary">{{ button_subscribe }}</button></div>
+						<input type="hidden" value="1" name="action">
+						<div class="valid"></div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript"><!--
+$("#newsletter_{{ id }}").webiNewsletter().work(  '{{ valid_email }}' );
+--></script>

@@ -1,0 +1,773 @@
+2023-09-18 21:38:43 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 21:42:28 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 21:42:47 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 21:57:04 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 22:10:33 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 22:11:05 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 22:14:50 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 22:14:51 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 22:14:57 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 22:31:27 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 22:39:50 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 22:49:20 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-18 23:11:37 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-19 13:11:29 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+2023-09-19 17:16:36 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+MOD: Cookie agreement
+----------------------------------------------------------------
+MOD: oceanpayment GooglePay
+----------------------------------------------------------------
+2023-09-19 20:07:42 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+MOD: Cookie agreement
+----------------------------------------------------------------
+MOD: oceanpayment GooglePay
+----------------------------------------------------------------
+MOD: OpenCart Track Shipment Support AfterShip
+
+FILE: catalog/model/checkout/order.php
+CODE: public function addOrderHistory($order_id, $order_status_id, $comment = '', $notify = false, $override = false) {
+LINE: 263
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "order_history SET order_id = '" . (int)$order_id . "', order_status_id = '" . (int)$order_status_id . "', notify = '" . (int)$notify . "', comment = '" . $this->db->escape($comment) . "', date_added = NOW()");
+LINE: 345
+
+FILE: catalog/controller/api/order.php
+CODE: $this->model_checkout_order->addOrderHistory($order_id, $this->request->post['order_status_id'], $this->request->post['comment'], $this->request->post['notify'], $this->request->post['override']);
+LINE: 798
+
+FILE: admin/model/sale/order.php
+CODE: $query = $this->db->query("SELECT oh.date_added, os.name AS status, oh.comment, oh.notify FROM " . DB_PREFIX . "order_history oh LEFT JOIN " . DB_PREFIX . "order_status os ON oh.order_status_id = os.order_status_id WHERE oh.order_id = '" . (int)$order_id . "' AND os.language_id = '" . (int)$this->config->get('config_language_id') . "' ORDER BY oh.date_added DESC LIMIT " . (int)$start . "," . (int)$limit);
+LINE: 437
+
+FILE: admin/controller/sale/order.php
+CODE: public function info() {
+LINE: 758
+CODE: public function history() {
+LINE: 1485
+CODE: $results = $this->model_sale_order->getOrderHistories($this->request->get['order_id'], ($page - 1) * 10, 10);
+LINE: 1507
+CODE: $data['histories'][] = array(
+LINE: 1518
+CODE: $data['histories'][] = array(
+LINE: 1528
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <label class="col-sm-2 control-label" for="input-notify">{{ entry_notify }}</label>
+LINE: 280
+CODE: data: 'order_status_id=' + encodeURIComponent($('select[name=\'order_status_id\']').val()) + '&notify=' + ($('input[name=\'notify\']').prop('checked') ? 1 : 0) + '&override=' + ($('input[name=\'override\']').prop('checked') ? 1 : 0) + '&append=' + ($('input[name=\'append\']').prop('checked') ? 1 : 0) + '&comment=' + encodeURIComponent($('textarea[name=\'comment\']').val()),
+LINE: 589
+CODE: $('#history').load('index.php?route=sale/order/history&user_token={{ user_token }}&order_id={{ order_id }}');
+LINE: 582
+LINE: 606
+CODE: $('#history').load(this.href);
+LINE: 579
+
+FILE: admin/view/template/sale/order_history.twig
+CODE: <td class="text-left">{{ column_notify }}</td>
+LINE: 13
+CODE: <td class="text-left">{{ history.notify }}</td>
+LINE: 39
+
+FILE: catalog/model/account/order.php
+CODE: public function getOrders($start = 0, $limit = 20) {
+LINE: 111
+
+FILE: catalog/controller/account/order.php
+CODE: $data['orders'][] = array(
+LINE: 77
+CODE: $data['orders'][] = array(
+LINE: 82
+CODE: $order_info = $this->model_account_order->getOrder($order_id);
+LINE: 165
+LINE: 445
+CODE: $this->load->language('account/order');
+LINE: 13
+LINE: 124
+LINE: 414
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 121
+LINE: 415
+CODE: $data['histories'][] = array(
+LINE: 405
+CODE: $data['histories'][] = array(
+LINE: 412
+CODE: $query = $this->db->query("SELECT date_added, os.name AS status, oh.comment, oh.notify FROM " . DB_PREFIX . "order_history oh LEFT JOIN " . DB_PREFIX . "order_status os ON oh.order_status_id = os.order_status_id WHERE oh.order_id = '" . (int)$order_id . "' AND os.language_id = '" . (int)$this->config->get('config_language_id') . "' ORDER BY oh.date_added");
+LINE: 156
+----------------------------------------------------------------
+2023-09-21 15:33:50 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+MOD: Cookie agreement
+----------------------------------------------------------------
+MOD: oceanpayment GooglePay
+----------------------------------------------------------------
+MOD: OpenCart Track Shipment Support AfterShip
+
+FILE: catalog/model/checkout/order.php
+CODE: public function addOrderHistory($order_id, $order_status_id, $comment = '', $notify = false, $override = false) {
+LINE: 263
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "order_history SET order_id = '" . (int)$order_id . "', order_status_id = '" . (int)$order_status_id . "', notify = '" . (int)$notify . "', comment = '" . $this->db->escape($comment) . "', date_added = NOW()");
+LINE: 345
+
+FILE: catalog/controller/api/order.php
+CODE: $this->model_checkout_order->addOrderHistory($order_id, $this->request->post['order_status_id'], $this->request->post['comment'], $this->request->post['notify'], $this->request->post['override']);
+LINE: 798
+
+FILE: admin/model/sale/order.php
+CODE: $query = $this->db->query("SELECT oh.date_added, os.name AS status, oh.comment, oh.notify FROM " . DB_PREFIX . "order_history oh LEFT JOIN " . DB_PREFIX . "order_status os ON oh.order_status_id = os.order_status_id WHERE oh.order_id = '" . (int)$order_id . "' AND os.language_id = '" . (int)$this->config->get('config_language_id') . "' ORDER BY oh.date_added DESC LIMIT " . (int)$start . "," . (int)$limit);
+LINE: 437
+
+FILE: admin/controller/sale/order.php
+CODE: public function info() {
+LINE: 758
+CODE: public function history() {
+LINE: 1485
+CODE: $results = $this->model_sale_order->getOrderHistories($this->request->get['order_id'], ($page - 1) * 10, 10);
+LINE: 1507
+CODE: $data['histories'][] = array(
+LINE: 1518
+CODE: $data['histories'][] = array(
+LINE: 1528
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <label class="col-sm-2 control-label" for="input-notify">{{ entry_notify }}</label>
+LINE: 280
+CODE: data: 'order_status_id=' + encodeURIComponent($('select[name=\'order_status_id\']').val()) + '&notify=' + ($('input[name=\'notify\']').prop('checked') ? 1 : 0) + '&override=' + ($('input[name=\'override\']').prop('checked') ? 1 : 0) + '&append=' + ($('input[name=\'append\']').prop('checked') ? 1 : 0) + '&comment=' + encodeURIComponent($('textarea[name=\'comment\']').val()),
+LINE: 589
+CODE: $('#history').load('index.php?route=sale/order/history&user_token={{ user_token }}&order_id={{ order_id }}');
+LINE: 582
+LINE: 606
+CODE: $('#history').load(this.href);
+LINE: 579
+
+FILE: admin/view/template/sale/order_history.twig
+CODE: <td class="text-left">{{ column_notify }}</td>
+LINE: 13
+CODE: <td class="text-left">{{ history.notify }}</td>
+LINE: 39
+
+FILE: catalog/model/account/order.php
+CODE: public function getOrders($start = 0, $limit = 20) {
+LINE: 111
+
+FILE: catalog/controller/account/order.php
+CODE: $data['orders'][] = array(
+LINE: 77
+CODE: $data['orders'][] = array(
+LINE: 82
+CODE: $order_info = $this->model_account_order->getOrder($order_id);
+LINE: 165
+LINE: 445
+CODE: $this->load->language('account/order');
+LINE: 13
+LINE: 124
+LINE: 414
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 121
+LINE: 415
+CODE: $data['histories'][] = array(
+LINE: 405
+CODE: $data['histories'][] = array(
+LINE: 412
+CODE: $query = $this->db->query("SELECT date_added, os.name AS status, oh.comment, oh.notify FROM " . DB_PREFIX . "order_history oh LEFT JOIN " . DB_PREFIX . "order_status os ON oh.order_status_id = os.order_status_id WHERE oh.order_id = '" . (int)$order_id . "' AND os.language_id = '" . (int)$this->config->get('config_language_id') . "' ORDER BY oh.date_added");
+LINE: 156
+----------------------------------------------------------------
+2023-09-21 15:43:28 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+MOD: CartSMS - SMS module for OpenCart
+
+FILE: admin/controller/common/column_left.php
+CODE: $customer = array();
+LINE: 309
+
+FILE: admin/controller/sale/order.php
+CODE: $this->response->setOutput($this->load->view('sale/order_info', $data));
+LINE: 1266
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <script type="text/javascript"><!--
+LINE: 422
+CODE: <input type="checkbox" name="notify" value="1" id="input-notify" />
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/information/contact.php
+CODE: $mail->send();
+LINE: 34
+
+FILE: catalog/controller/checkout/success.php
+CODE: $this->cart->clear();
+LINE: 14
+
+FILE: catalog/controller/api/order.php
+CODE: $json['order_id'] = $this->model_checkout_order->addOrder($order_data);
+LINE: 350
+----------------------------------------------------------------
+MOD: Cookie agreement
+----------------------------------------------------------------
+MOD: oceanpayment GooglePay
+----------------------------------------------------------------
+MOD: OpenCart Track Shipment Support AfterShip
+
+FILE: catalog/model/checkout/order.php
+CODE: public function addOrderHistory($order_id, $order_status_id, $comment = '', $notify = false, $override = false) {
+LINE: 263
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "order_history SET order_id = '" . (int)$order_id . "', order_status_id = '" . (int)$order_status_id . "', notify = '" . (int)$notify . "', comment = '" . $this->db->escape($comment) . "', date_added = NOW()");
+LINE: 345
+CODE: $this->model_checkout_order->addOrderHistory($order_id, $this->request->post['order_status_id'], $this->request->post['comment'], $this->request->post['notify'], $this->request->post['override']);
+LINE: 806
+
+FILE: admin/model/sale/order.php
+CODE: $query = $this->db->query("SELECT oh.date_added, os.name AS status, oh.comment, oh.notify FROM " . DB_PREFIX . "order_history oh LEFT JOIN " . DB_PREFIX . "order_status os ON oh.order_status_id = os.order_status_id WHERE oh.order_id = '" . (int)$order_id . "' AND os.language_id = '" . (int)$this->config->get('config_language_id') . "' ORDER BY oh.date_added DESC LIMIT " . (int)$start . "," . (int)$limit);
+LINE: 437
+CODE: public function info() {
+LINE: 758
+CODE: public function history() {
+LINE: 1503
+CODE: $results = $this->model_sale_order->getOrderHistories($this->request->get['order_id'], ($page - 1) * 10, 10);
+LINE: 1525
+CODE: $data['histories'][] = array(
+LINE: 1536
+CODE: $data['histories'][] = array(
+LINE: 1546
+CODE: <label class="col-sm-2 control-label" for="input-notify">{{ entry_notify }}</label>
+LINE: 280
+CODE: data: 'order_status_id=' + encodeURIComponent($('select[name=\'order_status_id\']').val()) + '&notify=' + ($('input[name=\'notify\']').prop('checked') ? 1 : 0) + '&override=' + ($('input[name=\'override\']').prop('checked') ? 1 : 0) + '&append=' + ($('input[name=\'append\']').prop('checked') ? 1 : 0) + '&comment=' + encodeURIComponent($('textarea[name=\'comment\']').val()),
+LINE: 634
+CODE: $('#history').load('index.php?route=sale/order/history&user_token={{ user_token }}&order_id={{ order_id }}');
+LINE: 627
+LINE: 651
+CODE: $('#history').load(this.href);
+LINE: 624
+
+FILE: admin/view/template/sale/order_history.twig
+CODE: <td class="text-left">{{ column_notify }}</td>
+LINE: 13
+CODE: <td class="text-left">{{ history.notify }}</td>
+LINE: 39
+
+FILE: catalog/model/account/order.php
+CODE: public function getOrders($start = 0, $limit = 20) {
+LINE: 111
+
+FILE: catalog/controller/account/order.php
+CODE: $data['orders'][] = array(
+LINE: 77
+CODE: $data['orders'][] = array(
+LINE: 82
+CODE: $order_info = $this->model_account_order->getOrder($order_id);
+LINE: 165
+LINE: 445
+CODE: $this->load->language('account/order');
+LINE: 13
+LINE: 124
+LINE: 414
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 121
+LINE: 415
+CODE: $data['histories'][] = array(
+LINE: 405
+CODE: $data['histories'][] = array(
+LINE: 412
+CODE: $query = $this->db->query("SELECT date_added, os.name AS status, oh.comment, oh.notify FROM " . DB_PREFIX . "order_history oh LEFT JOIN " . DB_PREFIX . "order_status os ON oh.order_status_id = os.order_status_id WHERE oh.order_id = '" . (int)$order_id . "' AND os.language_id = '" . (int)$this->config->get('config_language_id') . "' ORDER BY oh.date_added");
+LINE: 156
+----------------------------------------------------------------

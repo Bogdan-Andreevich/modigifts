@@ -1,0 +1,125 @@
+{# <div class="container martb">
+   <div class="tab-head">
+      <div class="heading text-left">
+         <h1><span>{{ head_title }}</span></h1>
+      </div>
+   </div>
+
+      <div class="row rless"> #}
+
+        <div class="col-md-3 col-sm-3 col-xs-12 cless right_product">
+        {% set num_row = 2 %}
+        {% set i = 0 %}
+         <div id="right_prod" class="owl-theme owl-carousel">
+            {% for product in products %}
+               {% if i == 0 %}
+          <div>
+            <div>
+        {% endif %}
+               <div class="product-layout col-xs-12 cless">
+                  <div class="product-thumb transition">
+                     <div class="image col-xs-4">
+                        <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive center-block" /></a>
+                        {% set t = 0 %}
+                        {% for more_image in product.more_images %}
+                        {% for pop in more_image %}
+                        {% if t == 0 %}
+                        <a href="{{ product.href }}"><img src="{{ pop.popup_more }}" class="img-responsive second-img" alt="hover image"/></a>
+                        {% set t = t + 1 %}
+                        {% endif %}
+                        {% endfor %}
+                        {% endfor %}
+                        {# {% if product.is_new %}<span class="new">{{ pro_new }}</span>{% endif %}
+                        {% if product.tag_per  %}
+                        <span class="sale">{{ product.tag_per }}%</span>
+                        {% endif %}
+                        {% if product.price %}
+                        {% if product.special %}
+                        <span class="reduce-price">{{ pro_sale }}</span>
+                        {% endif %}
+                        {% endif %} #}
+                     </div>
+                     <div class="caption col-xs-8 text-left">
+                        {% if product.rating %}
+                        <div class="rating">
+                           {% for i in 1..5 %}
+                           {% if product.rating < i %}
+                           <span class="fa fa-stack">
+                           <i class="fa fa-star-o fa-stack-2x"></i>
+                           </span>
+                           {% else %}
+                           <span class="fa fa-stack">
+                           <i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i>
+                           </span>
+                           {% endif %}
+                           {% endfor %}
+                        </div>
+                        {% else %}
+                        <div class="rating">{% for i in 1..5 %}
+                           <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                           {% endfor %}
+                        </div>
+                        {% endif %}
+                        <h4 class="protitle"><a href="{{ product.href }}">{{ product.name }}</a></h4>
+                        {% if product.price %}
+                        <div class="price">
+                           {% if not product.special %}
+                           {{ product.price }}
+                           {% else %}
+                           <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
+                           {% endif %}
+                           {#  {% if product.tax %}
+                           <span class="price-tax">{{ text_tax }} {{ product.tax }}</span>
+                           {% endif %} #}
+                        </div>
+                        {% endif %}
+                        {# <div class="form-group homeaddq">
+                          <button class="cartb add-to-cart" type="button" data-toggle="tooltip" title="{{ button_cart }}" onclick="cart.add('{{ product.product_id }}');">
+                            <svg><use xlink:href="#pcart"></use></svg><span>&nbsp;+{{ button_cart }}</span>
+                          </button>
+                          <input type="hidden" name="hid-qty-msg" value="{{ atleast_cart }}">
+                        </div>
+                        <div class="button-group text-center">
+                          <button type="button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><svg><use xlink:href="#heart" /></svg></button>
+                          <button type="button" data-toggle="tooltip" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><svg><use xlink:href="#compare"/></svg></button>
+                          <div data-toggle="tooltip" title="Quickview"  class="bquickv"></div>
+                        </div> #}
+                     </div>
+                  </div>
+               </div>
+
+           {% set i = i + 1 %}
+        {% if i == num_row %}
+            </div>
+          </div>
+          {% set i = 0 %}
+        {% endif %}
+            {% endfor %}
+            
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+   (function($){
+    $("#right_prod").owlCarousel({
+    itemsCustom : [
+    [0, 1],
+    [400, 1],
+    [600, 2],
+    [768, 2],
+    [992, 3],
+    [1200, 1],
+    [1410, 1]
+    ],
+      // autoPlay: 1000,
+      navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+      autoPlay : 5000,
+      navigation : false,
+      pagination:false
+    });
+   }(jQuery));
+</script>
+

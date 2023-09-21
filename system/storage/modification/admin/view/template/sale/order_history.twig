@@ -1,0 +1,54 @@
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td class="text-left">{{ column_date_added }}</td>
+        <td class="text-left">{{ column_comment }}</td>
+        <td class="text-left">{{ column_status }}</td>
+        <td class="text-left">{{ column_notify }}</td>
+
+        {% if module_da_track_shipment_status %}
+        <td class="text-left">{{ column_tracking_number }}</td>
+        <td class="text-left">{{ column_courier }}</td>
+        {% endif %}
+      
+      </tr>
+    </thead>
+    <tbody>
+      {% if histories %}
+      {% for history in histories %}
+      <tr>
+        <td class="text-left">{{ history.date_added }}</td>
+        <td class="text-left">{{ history.comment }}</td>
+        <td class="text-left">{{ history.status }}</td>
+        <td class="text-left">{{ history.notify }}</td>
+
+        {% if module_da_track_shipment_status %}
+        <td class="text-left">
+          {% for history_tracking_number in history.tracking_number %}
+            <div data-width="100"><a href="https://{{ username }}.aftership.com/{{ history_tracking_number }}" target="_blank">{{ history_tracking_number }}</a></div>
+          {% endfor %}
+
+        </td>
+        <td class="center">
+          {% if history.slug %}
+
+        <a href="{{ history.web_url }}" target="_blank">{{ history.name }}</a>
+          {% endif %}
+        </td>
+        {% endif %}
+      
+      </tr>
+      {% endfor %}
+      {% else %}
+      <tr>
+        <td class="text-center" colspan="4">{{ text_no_results }}</td>
+      </tr>
+      {% endif %}
+    </tbody>
+  </table>
+</div>
+<div class="row">
+  <div class="col-sm-6 text-left">{{ pagination }}</div>
+  <div class="col-sm-6 text-right">{{ results }}</div>
+</div>

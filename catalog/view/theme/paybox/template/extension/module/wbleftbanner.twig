@@ -1,0 +1,17 @@
+{# <div class="container martb">
+<div class="row rless app_left_right"> #}
+    <div class="col-md-4 col-xs-12 imgleft cless hidden-xs">
+    	{% for banner in banners %}
+    	<div class="beffect">
+	        {% if banner.link %}
+			    <a href="{{ banner.link }}">
+			    <img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive center-block" />
+			    </a>
+			    {% else %}
+			    <img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive center-block" />
+		    {% endif %}
+		</div>
+		{% endfor %}
+	</div>
+</div>
+</div>

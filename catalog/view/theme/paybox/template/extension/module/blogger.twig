@@ -1,0 +1,71 @@
+<div class="blog_webi martb container">
+        <div class="borbutt">
+            <h1 class="heading text-left"><span>{{ heading_title }}</span></h1>
+        </div>
+        <div class="box-content">
+            <div class="box-product row rless">
+                <div id="blog" class="owl-carousel owl-theme">
+                {% for blog in blogs %}
+                    <div class="product-block col-xs-12 cless">
+                       <div class="blogshadow row rless">
+                        {% if blog.image %}
+                            <div class="blog-left col-md-8 col-xs-12 cless">
+                                <div class="webi-blog-image">
+                                    <img src="{{ blog.image }}" alt="{{ heading_title }}" title="{{ heading_title }}" class="img-responsive" />
+                                    <div class="blog-post-image-hover"> </div>
+                                    <div class="webi_post_hover">
+                                        <div class="blog-ic">
+                                        <a class="icon zoom" title="Click to view Full Image " href="{{ blog.image }}" data-lightbox="example-set"><i class="fa fa-search"></i></a>
+                                        <a class="icon readmore_link" title="all blog" href="{{ all_blogs }}"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        {% endif %}
+                            <div class="blog-right col-md-4 col-xs-12 text-left cless">
+                                <div class="bs">
+                                    <div class="date-time blogdt">{{ blog.date_added }}</div>
+                                    <h4><a href="{{ blog.href }}">{{ blog.title }}</a></h4>
+                                    <p>{{ blog.description }}</p>
+                                    {# <h5>{{ blog.total_comments }} {{ entry_comment }}</h5> #}
+                                    {# <div class="testimg">
+                                        {{ blog_demo }}
+                                    </div> #}
+                                        <div class="view-blog">
+                                            <div class="read-more">
+                                                <a href="{{ blog.href }}">{{ text_read_more }}{# <svg class="caearrow" width="12px" height="8px"><use xlink:href="#arrow-carright"></use></svg> #}</a>
+                                            </div>
+                                        </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!--  <div class="buttons-see-all text-center">
+            <button type="button" onclick="location='{{ all_blogs }}';" class="btn btn-primary">{{ button_all_blogs }}</button>
+        </div> -->
+    </div>
+
+
+<script type="text/javascript">
+    (function($){
+    $("#blog").owlCarousel({
+    itemsCustom : [
+    [0, 1],
+    [600, 2],
+    [768, 2],
+    [992, 2],
+    [1200, 2],
+    [1410, 2]
+    ],
+      // autoPlay: 1000,
+      navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+      navigation: true,
+      pagination:false
+    });
+  }(jQuery));
+</script>

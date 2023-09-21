@@ -1,0 +1,17 @@
+<div class="container martb">
+<div class="row offbanner">
+    {% for banner in banners %}
+    <div class="col-sm-12 col-xs-12">
+    	<div class="beffect">
+	        {% if banner.link %}
+			    <a href="{{ banner.link }}">
+			    <img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive center-block" />
+			    </a>
+			    {% else %}
+			    <img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive center-block" />
+		    {% endif %}
+		</div>
+	</div>
+    {% endfor %}
+</div>
+</div>

@@ -1,0 +1,19 @@
+<div id="privacy-pop-up" style="display:none; position:fixed; z-index:9999; bottom:0; left:0; right:0; background:{{ bg_colour }}; color:{{ text_colour }}; margin:1em; padding:0.5em; text-align:center;  ">
+{{ message }}{% if informations_number > 0 %} <a href="{{ config_cookies_informations }}">{{ informations_text }}</a> {% endif %}
+  <a  id="exit-popup" style="background:#fff; color:#000; padding:0.25em 0.5em; margin:0.5em; cursor:pointer; font-weight:bold; font-size:90%;  ">
+  {{ button_text }}</a>
+</div>
+
+<script>
+    jQuery(document).ready(function() {
+        if(localStorage.getItem('pc234978122321234') != '9238475'){
+            jQuery("#privacy-pop-up").delay(1).fadeIn(1000);
+            {% if show_type == 0 %} localStorage.setItem('pc234978122321234','9238475'); {% endif %}
+        } 
+        jQuery('#exit-popup').click(function(e) // You are clicking the close button
+        {
+              {% if show_type == 1 %} localStorage.setItem('pc234978122321234','9238475'); {% endif %}
+            jQuery('#privacy-pop-up').fadeOut(1000); // Now the pop up is hiden.
+        });
+    });
+</script>

@@ -1,0 +1,147 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-module" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <a href="{{ action.cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li>{{ breadcrumb.text }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error.permission %}
+    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_permission }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% elseif error|length > 0 %}
+    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    <div class="panel panel-default">
+        <div class="tab-content">
+
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+      </div>
+      <div class="panel-body">
+        <form action="{{ action.save }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-message">{{ entry_name }}</label>
+            <div class="col-sm-10">
+              <input type="text" name="name" value="{{ name }}" placeholder="{{ placeholder_name }}" id="input-message" class="form-control" />
+              {% if error.name  %}
+              <div class="text-danger">{{ error_name }}</div>
+              {% endif %}
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-message">{{ entry_message }} </label>
+            <div class="col-sm-10">
+              <input type="text" name="message" value="{{ message }}" placeholder="{{ placeholder_message }}" id="input-message" class="form-control" />
+              {% if error.message %}
+              <div class="text-danger">{{ error_message }}</div>
+              {% endif %}
+            </div>
+          </div>
+                      <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-button-text">{{ entry_button_text }}</label>
+            <div class="col-sm-10">
+              <input type="text" name="button_text" value="{{ button_text }}" placeholder="{{ placeholder_button_text }}" id="input-redirect" class="form-control" />
+              {% if error.button_text %}
+              <div class="text-danger">{{ error_button_text }}</div>
+              {% endif %}
+            </div>
+          </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-cookies-informations">{{ entry_cookies_informations }}<span data-toggle="tooltip" title="Select 'None' if you dont need a link to information"></span></label>
+                  <div class="col-sm-10">
+                    <select name="config_cookies_informations" id="input-cookies-informations" class="form-control">
+                      <option value="0">{{ text_none }}</option>
+                        
+                      {% for information in informations %}
+                      {% if information.information_id == config_cookies_informations %}
+
+                      <option value="{{ information.information_id }}" selected="selected">{{ information.title }}</option>
+
+                      {% else %}
+
+                      <option value="{{ information.information_id }}">{{ information.title }}</option>
+
+                      {% endif %}
+                      {% endfor %}
+
+                    </select>
+                  </div>
+                </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-informations-text">{{ entry_informations_text }}</label>
+            <div class="col-sm-10">
+              <input type="text" name="informations_text" value="{{ informations_text }}" placeholder="{{ placeholder_informations_text }}" id="input-redirect-url" class="form-control" />
+              {% if error.informations_text %}
+              <div class="text-danger">{{ error_informations_text }}</div>
+              {% endif %}
+            </div>
+          </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-show-type">{{ entry_show_type }}<span data-toggle="tooltip" title="Choose how you want the module to work"></span></label>
+                  <div class="col-sm-10">
+                    <select name="show_type" id="input-show-type" class="form-control">
+			{% if show_type == 1 %}
+			<option value="1" selected="selected">Show until user press the button</option>
+                      	<option value="0">Show only the first time user visits the page</option>
+			{% elseif show_type == 0 %}
+			<option value="1">Show until user press the button</option>
+			<option value="0" selected="selected">Show only the first time user visits the page</option>
+			{% endif %}
+                    </select>
+                  </div>
+                </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.js"></script>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-bg-colour">{{ entry_bg_colour }}</label>
+            <div class="col-sm-10">
+              <input type="text" name="bg_colour" value="{{ bg_colour }}" placeholder="{{ placeholder_bg_colour }}" id="input-redirect-url" class="jscolor {hash:true} form-control" />
+              {% if error.bg_colour %}
+              <div class="text-danger">{{ error_bg_colour }}</div>
+              {% endif %}
+            </div>
+          </div>
+                      <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-text-colour">{{ entry_text_colour }}</label>
+            <div class="col-sm-10">
+              <input type="text" name="text_colour" value="{{ text_colour }}" placeholder="{{ placeholder_text_colour }}" id="input-text-colour" class="jscolor {hash:true} form-control" />
+              {% if error.text_colour %}
+              <div class="text-danger">{{ error_text_colour }}</div>
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status">{{ entry_status }}</label>
+            <div class="col-sm-10">
+              <select name="status" id="input-status" class="form-control">
+                {% if status %}
+                <option value="1" selected="selected">{{ text_enabled }}</option>
+                <option value="0">{{ text_disabled }}</option>
+                {% else %}
+                <option value="1">{{ text_enabled }}</option>
+                <option value="0" selected="selected">{{ text_disabled }}</option>
+                {% endif %}
+              </select>
+            </div>
+          </div>
+          <input type="hidden"name="module_id" value="{{ module_id }}" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{{ footer }}
