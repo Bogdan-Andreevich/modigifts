@@ -156,32 +156,46 @@ class ModelCatalogProduct extends Model {
 		$sql .= " GROUP BY p.product_id";
 
 		$sort_data = array(
-			'pd.name',
-			'p.model',
-			'p.quantity',
-			'p.price',
-			'rating',
-			'p.sort_order',
-			'p.date_added'
+            'pd.name',
+            'p.model',
+            'ps.price',
+            'p.text_size',
+            'p.delivery_time',
+            'p.color',
+            'rating',
+            'p.sort_order'
 		);
 
-		if (isset($data['sort']) && in_array($data['sort'], $sort_data)) {
-			if ($data['sort'] == 'pd.name' || $data['sort'] == 'p.model') {
-				$sql .= " ORDER BY LCASE(" . $data['sort'] . ")";
-			} elseif ($data['sort'] == 'p.price') {
-				$sql .= " ORDER BY (CASE WHEN special IS NOT NULL THEN special WHEN discount IS NOT NULL THEN discount ELSE p.price END)";
-			} else {
-				$sql .= " ORDER BY " . $data['sort'];
-			}
-		} else {
-			$sql .= " ORDER BY p.sort_order";
-		}
+        if (isset($data['sort']) && in_array($data['sort'], $sort_data)) {
+            if ($data['sort'] == 'pd.name' || $data['sort'] == 'p.model') {
+                $sql .= " ORDER BY LCASE(" . $data['sort'] . ")";
+            } elseif ($data['sort'] == 'p.text_size') {
+                $sql .= " ORDER BY p.text_size";
+            } elseif ($data['sort'] == 'p.delivery_time') {
+                $sql .= " ORDER BY p.delivery_time";
+            } elseif ($data['sort'] == 'p.color') {
+                $sql .= " ORDER BY p.color";
+            } else {
+                $sql .= " ORDER BY " . $data['sort'];
+            }
+        } else {
+            $sql .= " ORDER BY p.sort_order";
+        }
 
-		if (isset($data['order']) && ($data['order'] == 'DESC')) {
-			$sql .= " DESC, LCASE(pd.name) DESC";
-		} else {
-			$sql .= " ASC, LCASE(pd.name) ASC";
-		}
+        if (isset($data['order']) && ($data['order'] == 'DESC')) {
+            if ($data['sort'] == 'pd.name' || $data['sort'] == 'p.model') {
+                $sql .= " DESC, LCASE(pd.name) DESC";
+            } else {
+                $sql .= " DESC";
+            }
+        } else {
+            if (isset($data['sort']) == 'pd.name' || isset($data['sort']) == 'p.model') {
+                $sql .= " ASC, LCASE(pd.name) ASC";
+            } else {
+                $sql .= " ASC";
+            }
+        }
+
 
 		if (isset($data['start']) || isset($data['limit'])) {
 			if ($data['start'] < 0) {

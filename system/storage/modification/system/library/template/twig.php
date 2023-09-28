@@ -3,6 +3,10 @@ namespace Template;
 final class Twig {
 	private $data = array();
 
+            //d_twig_manager.xml
+            private $registry = array();
+            
+
 	public function set($key, $value) {
 		$this->data[$key] = $value;
 	}

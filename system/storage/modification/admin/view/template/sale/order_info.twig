@@ -397,51 +397,6 @@
       </div>
     </div>
   </div>
-
-                {% if cartsms_application_id is defined %}
-                <div class="container-fluid">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-envelope-o"></i> CartSMS</h3>
-                        </div>
-                        <div class="panel-body">
-                        <div id="cart-sms" style="min-height: 0;">
-                            <div id="react-snack-root"></div>
-                            <div id="react-app-root">
-                                <p>Loading Content</p>
-                            </div>
-                            <script type="application/javascript">
-                                var _bg_client_config = {
-                                    url: {
-                                        authenticationService : {{ cartsms_authenticate|json_encode() }}
-                                    }
-                                };
-                            </script>
-                            <link rel="stylesheet" href="{{ cartsms_css|escape('html_attr') }}" type="text/css"/>
-                            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css"/>
-                            <script src="{{ cartsms_widget_api_url }}"></script>
-                            <script type="application/javascript">
-                                var input = _bg_client.parseQuery(location.search);
-
-                                _bg_client.require({{ cartsms_application_id|json_encode() }}, {
-                                    product: "oc",
-                                    language: {{ cartsms_language|json_encode() }},
-                                    view: {
-                                        presenter: 'ModuleComponents',
-                                        action: 'sendSms'
-                                },
-                                params: {
-                                    id: {{ telephone|json_encode() }},
-                                    key: {{ cartsms_customer_iso|json_encode() }}
-                                }
-                              });
-                            </script>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                {% endif %}
-            
   <script type="text/javascript"><!--
   $(document).delegate('#button-invoice', 'click', function() {
 	  $.ajax({

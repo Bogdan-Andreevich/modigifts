@@ -17,6 +17,7 @@ class ControllerExtensionModuleRunningText extends Controller {
 
         $data['text'] = $this->model_extension_module_running_text->getText();
 
+
         $data['heading_title'] = $this->language->get('heading_title');
         $data['text_edit'] = $this->language->get('text_edit');
         $data['text_form'] = $this->language->get('text_form');
@@ -57,6 +58,11 @@ class ControllerExtensionModuleRunningText extends Controller {
         }
 
         $data['user_token'] = $this->session->data['user_token'];
+
+        $data['header'] = $this->load->controller('common/header');
+		$data['column_left'] = $this->load->controller('common/column_left');
+		$data['footer'] = $this->load->controller('common/footer');
+        
 
         $this->response->setOutput($this->load->view('extension/module/running_text', $data));
     }

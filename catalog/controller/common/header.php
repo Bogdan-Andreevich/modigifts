@@ -2,9 +2,10 @@
 class ControllerCommonHeader extends Controller {
 	public function index() {
 		// Analytics
-		$this->load->model('setting/extension');
+        $this->load->model('setting/extension');
 
-		$data['analytics'] = array();
+
+        $data['analytics'] = array();
 
 		$analytics = $this->model_setting_extension->getExtensions('analytics');
 
@@ -85,8 +86,12 @@ class ControllerCommonHeader extends Controller {
 		$data['sitemap'] = $this->url->link('information/sitemap');
 		$data['brand'] = $this->url->link('product/manufacturer');
 		$data['return'] = $this->url->link('account/return/add');
-		$data['blog'] = $this->url->link('information/blogger/blogs');
+        $data['blog'] = $this->url->link('information/blogger/blogs');
 
-		return $this->load->view('common/header', $data);
+        $headerText = $this->model_setting_extension->getHeaderText();
+
+        $data['running_text'] = $headerText;
+
+        return $this->load->view('common/header', $data);
 	}
 }

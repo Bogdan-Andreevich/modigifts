@@ -21,4 +21,13 @@ $_['text_rating_asc']   = 'Rating (Lowest)';
 $_['text_rating_desc']  = 'Rating (Highest)';
 $_['text_model_asc']    = 'Model (A - Z)';
 $_['text_model_desc']   = 'Model (Z - A)';
+
+$_['text_size_asc']   = 'Size (A - Z)';
+$_['text_size_desc']   = 'Size (Z - A)';
+$_['text_delivery_time_asc']   = 'Delivery (A - Z)';
+$_['text_delivery_time_desc']   = 'Delivery (Z - A)';
+$_['text_color_asc']   = 'Color (A - Z)';
+$_['text_color_desc']   = 'Color (Z - A)';
+
+
 $_['text_limit']        = 'Show:';

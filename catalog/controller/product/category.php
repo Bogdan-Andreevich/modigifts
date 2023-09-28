@@ -311,6 +311,43 @@ class ControllerProductCategory extends Controller {
 				'value' => 'p.model-DESC',
 				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
 			);
+            //
+
+            $data['sorts'][] = array(
+                'text'  => $this->language->get('text_size_asc'),
+                'value' => 'p.text_size-ASC',
+                'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.weight&order=ASC' . $url)
+            );
+
+            $data['sorts'][] = array(
+                'text'  => $this->language->get('text_size_desc'),
+                'value' => 'p.text_size-DESC',
+                'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.weight&order=DESC' . $url)
+            );
+
+            $data['sorts'][] = array(
+                'text'  => $this->language->get('text_delivery_time_asc'),
+                'value' => 'p.delivery_time-DESC',
+                'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.date_available&order=ASC' . $url)
+            );
+
+            $data['sorts'][] = array(
+                'text'  => $this->language->get('text_delivery_time_desc'),
+                'value' => 'p.delivery_time-DESC',
+                'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.date_available&order=DESC' . $url)
+            );
+
+            $data['sorts'][] = array(
+                'text'  => $this->language->get('text_color_asc'),
+                'value' => 'p.color-ASC',
+                'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.color&order=ASC' . $url)
+            );
+
+            $data['sorts'][] = array(
+                'text'  => $this->language->get('text_color_desc'),
+                'value' => 'p.color-DESC',
+                'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.color&order=DESC' . $url)
+            );
 
 			$url = '';
 

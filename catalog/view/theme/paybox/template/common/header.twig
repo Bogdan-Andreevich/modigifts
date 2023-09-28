@@ -809,11 +809,12 @@
   </svg>
 <body>
   <header>
-
+     <marquee id="running-text">{{ running_text }}</marquee>
 <div class="hsticky">
   <div class="container">
     <div class="row hbottom">
       <div class="col-xs-2 hidden-sm hidden-md hidden-lg hidden-xl appmenu"></div>
+
 
         <div id="logo" class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
           {% if logo %}<a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive" /></a>{% else %}

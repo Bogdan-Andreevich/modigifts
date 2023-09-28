@@ -1294,24 +1294,6 @@ class ControllerSaleOrder extends Controller {
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['footer'] = $this->load->controller('common/footer');
 
-
-
-            if(class_exists('\CartSms\Init'))
-            {
-                $init = new \CartSms\Init($this->registry);
-
-                if($init->di()->getSettings()->load("static:application_token", false))
-                {
-                    $data['cartsms_css'] = $init->di()->getModule()->getUrl('/'.(defined('BULKGATE_DEV_MODE') ? 'dev' : 'dist').'/css/bulkgate-cartsms.css');
-                    $data['cartsms_application_id'] = $init->di()->getSettings()->load('static:application_id', '');
-                    $data['cartsms_language'] = $init->di()->getSettings()->load('main:language', 'en');
-                    $data['cartsms_widget_api_url'] = $init->di()->getModule()->getUrl('/'.(defined('BULKGATE_DEV_MODE') ? 'dev' : 'dist').'/widget-api/widget-api.js');
-                    $data['cartsms_authenticate'] = \BulkGate\CartSms\Helpers::fixUrl($this->url->link('cartsms/sign/authenticate', 'user_token=' . $this->session->data['user_token'], true));
-                    $data['cartsms_customer_iso'] = \BulkGate\CartSms\Helpers::getCountryCode($init->di()->getDatabase(), isset($order_info['payment_country_id']) ? $order_info['payment_country_id'] : -1);
-                }
-            }
-
-            
 			$this->response->setOutput($this->load->view('sale/order_info', $data));
 		} else {
 			return new Action('error/not_found');

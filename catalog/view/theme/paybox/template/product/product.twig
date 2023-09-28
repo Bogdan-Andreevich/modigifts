@@ -56,8 +56,11 @@
             {% else %}
             {% set class = 'col-lg-7 col-md-6 col-xs-12 col-sm-6' %}
             {% endif %}
+
             <div class="{{ class }} pro-content">
               <h1>{{ heading_title }}</h1><hr class="producthr">
+                <div>{{ description }}</div>
+                <hr class="producthr">
               <ul class="list-unstyled">
                 {% if manufacturer %}
                 <li><span class="text-decor">{{ text_manufacturer }}</span><a href="{{ manufacturers }}" class="textdeb">{{ manufacturer }}</a></li>
@@ -264,12 +267,13 @@
                             <script async src="https://static.addtoany.com/menu/page.js"></script>
                 <!-- AddToAny END -->
               </div>
+
               {% endif %} </div>
           </div>
         </div>
 <div class="product-tab">
       <ul class="nav nav-tabs">
-            <li class="active"><a href="#tab-description" data-toggle="tab">{{ tab_description }}</a></li>
+{#            <li class="active"><a href="#tab-description" data-toggle="tab">{{ tab_description }}</a></li>#}
             {% if attribute_groups %}
             <li><a href="#tab-specification" data-toggle="tab">{{ tab_attribute }}</a></li>
             {% endif %}
@@ -278,7 +282,7 @@
             {% endif %}
           </ul>
           <div class="tab-content">
-            <div class="tab-pane active" id="tab-description">{{ description }}</div>
+{#            <div class="tab-pane active" id="tab-description">{{ description }}</div>#}
             {% if attribute_groups %}
             <div class="tab-pane" id="tab-specification">
               <table class="table table-bordered">

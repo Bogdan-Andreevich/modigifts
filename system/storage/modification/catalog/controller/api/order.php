@@ -342,14 +342,6 @@ class ControllerApiOrder extends Controller {
 
 				$json['order_id'] = $this->model_checkout_order->addOrder($order_data);
 
-                $this->event->trigger('bulkgate/cartsms/new/order/hook', array(
-                    'bulkgate/cartsms/new/order/hook',
-                    array(
-                        $json['order_id']
-                    )
-                ));
-            
-
 				// Set the order history
 				if (isset($this->request->post['order_status_id'])) {
 					$order_status_id = $this->request->post['order_status_id'];
