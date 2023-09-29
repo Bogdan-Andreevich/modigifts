@@ -337,17 +337,17 @@ class ControllerProductCategory extends Controller {
                 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.date_available&order=DESC' . $url)
             );
 
-            $data['sorts'][] = array(
-                'text'  => $this->language->get('text_color_asc'),
-                'value' => 'p.color-ASC',
-                'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.color&order=ASC' . $url)
-            );
-
-            $data['sorts'][] = array(
-                'text'  => $this->language->get('text_color_desc'),
-                'value' => 'p.color-DESC',
-                'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.color&order=DESC' . $url)
-            );
+//            $data['sorts'][] = array(
+//                'text'  => $this->language->get('text_color_asc'),
+//                'value' => 'p.color-ASC',
+//                'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.color&order=ASC' . $url)
+//            );
+//
+//            $data['sorts'][] = array(
+//                'text'  => $this->language->get('text_color_desc'),
+//                'value' => 'p.color-DESC',
+//                'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.color&order=DESC' . $url)
+//            );
 
 			$url = '';
 
